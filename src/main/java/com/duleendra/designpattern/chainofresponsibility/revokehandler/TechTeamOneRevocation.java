@@ -14,7 +14,6 @@ public class TechTeamOneRevocation implements ResourceRevocationRoleChain {
 
     @Override
     public Map<String,Object> getAuthorizedTechTeam(int technicalAccountId) {
-        //Get the tem team lists
         List<String> teamTeamOne = Data.getTemTeamMembers(technicalAccountId,1);
         List<String> saTeamOne = Data.getSaTeamembers(technicalAccountId,1);
 
